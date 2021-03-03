@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/alecasp/doceo/static/css/main.fe6dc6db.chunk.css",
-    "main.js": "/alecasp/doceo/static/js/main.c1419141.chunk.js",
-    "main.js.map": "/alecasp/doceo/static/js/main.c1419141.chunk.js.map",
-    "runtime-main.js": "/alecasp/doceo/static/js/runtime-main.8f14ad4a.js",
-    "runtime-main.js.map": "/alecasp/doceo/static/js/runtime-main.8f14ad4a.js.map",
-    "static/js/2.d5259fcc.chunk.js": "/alecasp/doceo/static/js/2.d5259fcc.chunk.js",
-    "static/js/2.d5259fcc.chunk.js.map": "/alecasp/doceo/static/js/2.d5259fcc.chunk.js.map",
-    "index.html": "/alecasp/doceo/index.html",
-    "static/css/main.fe6dc6db.chunk.css.map": "/alecasp/doceo/static/css/main.fe6dc6db.chunk.css.map",
-    "static/js/2.d5259fcc.chunk.js.LICENSE.txt": "/alecasp/doceo/static/js/2.d5259fcc.chunk.js.LICENSE.txt"
+    "main.css": "/doceo/static/css/main.fe6dc6db.chunk.css",
+    "main.js": "/doceo/static/js/main.c1419141.chunk.js",
+    "main.js.map": "/doceo/static/js/main.c1419141.chunk.js.map",
+    "runtime-main.js": "/doceo/static/js/runtime-main.70087591.js",
+    "runtime-main.js.map": "/doceo/static/js/runtime-main.70087591.js.map",
+    "static/js/2.d5259fcc.chunk.js": "/doceo/static/js/2.d5259fcc.chunk.js",
+    "static/js/2.d5259fcc.chunk.js.map": "/doceo/static/js/2.d5259fcc.chunk.js.map",
+    "index.html": "/doceo/index.html",
+    "static/css/main.fe6dc6db.chunk.css.map": "/doceo/static/css/main.fe6dc6db.chunk.css.map",
+    "static/js/2.d5259fcc.chunk.js.LICENSE.txt": "/doceo/static/js/2.d5259fcc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f14ad4a.js",
+    "static/js/runtime-main.70087591.js",
     "static/js/2.d5259fcc.chunk.js",
     "static/css/main.fe6dc6db.chunk.css",
     "static/js/main.c1419141.chunk.js"
