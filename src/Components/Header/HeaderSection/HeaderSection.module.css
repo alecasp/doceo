@@ -1,0 +1,37 @@
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.headerSection.left {
+  background: #eee;
+  color: #555;
+}
+.headerSection.right {
+  background: #555;
+  color: #eee;
+}
+
+.headerSection h4 {
+  font-size: 6.2rem;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+}
+.headerSection h1 {
+  font-size: 17.7rem;
+  margin-bottom: 4rem;
+}
+.headerSection p {
+  width: 50%;
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+.headerSection a {
+  background: rgb(0, 102, 255);
+  color: #fff;
+  padding: 1.5rem 6rem;
+  font-size: 2.6rem;
+  border-radius: 1rem;
+}
