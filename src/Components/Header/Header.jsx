@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import css from "./Header.module.css";
 import HeaderSection from "./HeaderSection/HeaderSection";
 
 function Header() {
-  const [state, setState] = useState(() => ({
+  const sections = {
     left: {
       h1: "Vänster",
       h4: "Ni söker",
@@ -20,12 +20,12 @@ function Header() {
       btn: "Button",
       class: "right",
     },
-  }));
+  };
 
   return (
     <header className={css.header}>
-      <HeaderSection data={state.left} />
-      <HeaderSection data={state.right} />
+      <HeaderSection data={sections.left} />
+      <HeaderSection data={sections.right} />
     </header>
   );
 }

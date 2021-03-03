@@ -1,3 +1,9 @@
+:root {
+  --color-grey-dark: #555;
+  --color-grey-light: #ccc;
+  --color-grey-light-2: #eee;
+  --color-blue: rgb(0, 140, 255);
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +28,17 @@ ul {
 }
 html {
   font-size: 10px;
+}
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 8px;
+  }
 }
 body {
 }

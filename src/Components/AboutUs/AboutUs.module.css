@@ -1,0 +1,67 @@
+.aboutus {
+	min-height: 100vh;
+	padding: 3rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--color-grey-light);
+}
+.aboutus article {
+	background: var(--color-grey-dark);
+	color: var(--color-grey-light);
+	padding: 5rem 15rem;
+	width: 60%;
+}
+.aboutus article h2 {
+	font-size: 6rem;
+	margin-bottom: 4rem;
+}
+.aboutus article p {
+	/* text-align: justify; */
+	font-size: 3rem;
+}
+.aboutus article p:not(:last-child) {
+	margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1300px) {
+	.aboutus article {
+		padding: 5rem 10rem;
+	}
+}
+@media only screen and (max-width: 950px) {
+	.aboutus article {
+		padding: 5rem 8rem;
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 770px) {
+	.aboutus article h2 {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+	.aboutus article p {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.aboutus article {
+		padding: 5rem;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.aboutus article {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.aboutus article {
+		padding: 3rem;
+	}
+	.aboutus article h2 {
+		font-size: 3.7rem;
+		margin-bottom: 2rem;
+	}
+	.aboutus article p {
+		font-size: 1.7rem;
+	}
+}
