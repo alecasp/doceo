@@ -1,0 +1,30 @@
+.newsContainer {
+  background: var(--color-grey-light-2);
+  padding: 4rem 0;
+}
+.newsContainer h2 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.newsBlock {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem 8rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .newsBlock {
+    width: 90%;
+    grid-gap: 4rem 6rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .newsBlock {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 4rem;
+  }
+}
