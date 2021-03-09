@@ -7,12 +7,12 @@
 }
 
 .headerSection.left {
-  background: var(--color-grey-light);
-  color: var(--color-grey-dark);
+  background: var(--color-green);
+  color: var(--color-black);
 }
 .headerSection.right {
-  background: var(--color-grey-dark);
-  color: var(--color-grey-light);
+  background: var(--color-purple);
+  color: var(--color-black);
 }
 
 .headerSection h4 {
@@ -30,8 +30,8 @@
   margin-bottom: 8rem;
 }
 .headerSection a {
-  background: var(--color-blue);
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-white);
   padding: 1.5rem 6rem;
   font-size: 2.6rem;
   border-radius: 1rem;

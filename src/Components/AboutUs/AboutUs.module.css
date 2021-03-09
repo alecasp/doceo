@@ -1,69 +1,121 @@
-.aboutus {
-  min-height: 100vh;
-  padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-grey-light);
+.article section {
+  padding: 8rem 0 8rem 30rem;
 }
-.aboutus article {
-  background: var(--color-grey-dark);
-  color: var(--color-grey-light);
-  padding: 5rem 15rem;
-  width: 60%;
-}
-.aboutus article h2 {
-  font-size: 6rem;
-  margin-bottom: 4rem;
-}
-.aboutus article p {
+
+.article section h2 {
+  text-transform: uppercase;
   font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
 }
-.aboutus article p:not(:last-child) {
-  margin-bottom: 3rem;
+.article section p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 }
-@media only screen and (max-width: 1300px) {
-  .aboutus article {
-    padding: 5rem 10rem;
-  }
+.article section.mission p {
+  width: 50%;
 }
-@media only screen and (max-width: 950px) {
-  .aboutus article {
-    padding: 5rem 8rem;
-    width: 80%;
+.article section a {
+  background: transparent;
+  margin-top: 5rem;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: 1px solid var(--color-white);
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+}
+.article section.about {
+  background: var(--color-grey);
+  color: var(--color-white);
+}
+
+.article section img {
+  width: 100%;
+  height: 100%;
+}
+.article section.about .about_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.article section.about .text {
+  width: 40%;
+}
+.article section.about .images {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.article section.about .images .imgbox {
+  width: 14rem;
+  height: 19rem;
+}
+.article section.about .images .imgbox:last-child {
+  align-self: end;
+}
+@media only screen and (max-width: 1030px) {
+  .article section {
+    padding: 8rem 0 8rem 20rem;
   }
 }
 @media only screen and (max-width: 770px) {
-  .aboutus article h2 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
+  .article section {
+    padding: 6rem 0 8rem 10rem;
   }
-  .aboutus article p {
-    font-size: 2rem;
+  .article section h2 {
+    margin-bottom: 4rem;
+  }
+  .article section.about .text {
+    width: 50%;
+  }
+  .article section.about .images {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 4rem;
   }
 }
-@media only screen and (max-width: 600px) {
-  .aboutus article {
-    padding: 5rem;
-  }
-}
+
 @media only screen and (max-width: 500px) {
-  .aboutus article {
-    width: 90%;
+  .article section.mission p {
+    width: 80%;
+  }
+  .article section.about .about_inner {
+    display: block;
+  }
+  .article section.about .text {
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+  .article section.about .images {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+  }
+  .article section.about .images .imgbox {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 430px) {
-  .aboutus {
-    min-height: 80vh;
+  .article section {
+    padding: 5rem 0 5rem 8rem;
   }
-  .aboutus article {
-    padding: 3rem;
+}
+@media only screen and (max-width: 330px) {
+  .article section {
+    padding: 6rem 3rem;
   }
-  .aboutus article h2 {
-    font-size: 3.7rem;
-    margin-bottom: 2rem;
+  .article section h2 {
+    margin-bottom: 3rem;
   }
-  .aboutus article p {
-    font-size: 1.7rem;
+  .article section.mission p {
+    width: 100%;
+  }
+  .article section.about .text {
+    width: 100%;
+  }
+  .article section.about .images {
+    width: 100%;
   }
 }

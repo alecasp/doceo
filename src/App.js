@@ -1,8 +1,9 @@
 import React from "react";
-import AboutUs from "./Components/AboutUs/AboutUs";
 import Header from "./Components/Header/Header";
+import AboutUs from "./Components/AboutUs/AboutUs";
 import Nav from "./Components/Nav/Nav";
 import NewsContainer from "./Components/NewsContainer/NewsContainer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <AboutUs />
       <NewsContainer />
+      <Footer />
     </>
   );
 }
