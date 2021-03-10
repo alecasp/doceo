@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/doceo/static/css/main.0b423f86.chunk.css",
-    "main.js": "/doceo/static/js/main.2dfff8be.chunk.js",
-    "main.js.map": "/doceo/static/js/main.2dfff8be.chunk.js.map",
+    "main.js": "/doceo/static/js/main.02b026c4.chunk.js",
+    "main.js.map": "/doceo/static/js/main.02b026c4.chunk.js.map",
     "runtime-main.js": "/doceo/static/js/runtime-main.70087591.js",
     "runtime-main.js.map": "/doceo/static/js/runtime-main.70087591.js.map",
     "static/js/2.fb90e2bc.chunk.js": "/doceo/static/js/2.fb90e2bc.chunk.js",
     "static/js/2.fb90e2bc.chunk.js.map": "/doceo/static/js/2.fb90e2bc.chunk.js.map",
     "index.html": "/doceo/index.html",
     "static/css/main.0b423f86.chunk.css.map": "/doceo/static/css/main.0b423f86.chunk.css.map",
-    "static/js/2.fb90e2bc.chunk.js.LICENSE.txt": "/doceo/static/js/2.fb90e2bc.chunk.js.LICENSE.txt",
-    "static/media/face.a1552644.jpg": "/doceo/static/media/face.a1552644.jpg"
+    "static/js/2.fb90e2bc.chunk.js.LICENSE.txt": "/doceo/static/js/2.fb90e2bc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.70087591.js",
     "static/js/2.fb90e2bc.chunk.js",
     "static/css/main.0b423f86.chunk.css",
-    "static/js/main.2dfff8be.chunk.js"
+    "static/js/main.02b026c4.chunk.js"
   ]
 }
