@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load an icon library  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- My Style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vanilla-SplitScreen</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <section class="headerSection left">
+        <h4>Vänster</h4>
+        <h1>Ni söker</h1>
+        <p>
+          Lorem ipsum dolor sit amet conse adipisicing elit. Sit iste ipsum
+          perspiciatis pariatur, minus
+        </p>
+        <a href="#" class="btn"> Button </a>
+      </section>
+      <section class="headerSection right">
+        <h4>Höger</h4>
+        <h1>Ni söker</h1>
+        <p>
+          Lorem ipsum dolor sit amet conse adipisicing elit. Sit iste ipsum
+          perspiciatis pariatur, minus
+        </p>
+        <a href="#" class="btn"> Button </a>
+      </section>
+    </header>
+
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">LOGO-IMAGE</div>
+        <div class="menu">
+          <button class="menuBtn" onclick="menuHandler()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navList">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/about.html">About Us</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="aboutus">
+      <article class="container section">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam
+          cum quos dolore aliquid saepe minima harum laboriosam molestias
+          incidunt totam veritatis, quia, doloribus officia fuga omnis dolores
+          excepturi praesentium! quam perspiciatis, dicta in beatae. Voluptas
+          vitae rem, molestias, quaerat modi hic deserunt aliquam quis similique
+          alias totam.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          tenetur aperiam soluta. cum quos dolore aliquid saepe minima harum
+          laboriosam molestias incidunt totam veritatis, quia, doloribus officia
+          fuga omnis dolores excepturi praesentium! quam perspiciatis, dicta in
+          beatae. Voluptas vitae rem, molestias, quaerat modi hic deserunt
+          aliquam quis similique alias totam.
+        </p>
+      </article>
+
+      <article class="quote">
+        <blockquote>
+          “This is a quote spanning over two sentences. Its purpose is to catch
+          your attention.”
+        </blockquote>
+        <img src="img/handshake.png" alt="" />
+      </article>
+
+      <article class="container section">
+        <h2>OUR Expertise</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam
+          cum quos dolore aliquid saepe minima harum laboriosam molestias
+          incidunt totam veritatis, quia, doloribus officia fuga omnis dolores
+          excepturi praesentium! quam perspiciatis, dicta in beatae. Voluptas
+          vitae rem, molestias, quaerat modi hic deserunt aliquam quis similique
+          alias totam.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          tenetur aperiam soluta. cum quos dolore aliquid saepe minima harum
+          laboriosam molestias incidunt totam veritatis, quia, doloribus officia
+          fuga omnis dolores excepturi praesentium! quam perspiciatis, dicta in
+          beatae. Voluptas vitae rem, molestias, quaerat modi hic deserunt
+          aliquam quis similique alias totam.
+        </p>
+
+        <div class="reasons">
+          <div class="reason">
+            <h3>Reason 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, in
+              dolor, nec orci. Sapien, ut cras in risus nibh nunc. Non, elit
+              habitasse nisl convallis molestie auctor.
+            </p>
+          </div>
+          <div class="reason">
+            <h3>Reason 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, in
+              dolor, nec orci. Sapien, ut cras in risus nibh nunc. Non, elit
+              habitasse nisl convallis molestie auctor.
+            </p>
+          </div>
+          <div class="reason">
+            <h3>Reason 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, in
+              dolor, nec orci. Sapien, ut cras in risus nibh nunc. Non, elit
+              habitasse nisl convallis molestie auctor.
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="contact">
+          <h3>Contact us</h3>
+          <p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>+46 123 456 78 90</span>
+          </p>
+          <p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>info@mail.se</span>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Street 1, 222 33 City</span>
+          </p>
+        </div>
+        <div class="follow">
+          <h3>Follow us</h3>
+          <div class="icons">
+            <a href="#" class="shadow">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" class="shadow">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="shadow">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#" class="shadow">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const menuHandler = (e) => {
+      document.querySelector(".menuBtn").classList.toggle("active");
+      document.querySelector(".navList").classList.toggle("active");
+    };
+  </script>
+</html>
