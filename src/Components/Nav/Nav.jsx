@@ -12,20 +12,29 @@ function Nav() {
       <div className="container">
         <div className="logo">LOGO-IMAGE</div>
         <div className="menu">
+          <ul className="navList">
+            <li>
+              <Link to="/left" className="desk-a">
+                SubpageA
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="desk-a">
+                SubpageB
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="desk-a">
+                SubpageC
+              </Link>
+            </li>
+          </ul>
+          <a href="#" className="login">
+            Login
+          </a>
           <button className="menuBtn" onClick={menuHandler}>
             <i className="fa fa-bars"></i>
           </button>
-          <ul className="navList">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>

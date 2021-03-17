@@ -1,5 +1,13 @@
+main {
+  background: var(--color-grey-light);
+  padding: 4rem 0;
+}
 main .section {
-  padding: 8rem 0;
+  padding: 5rem;
+  background: var(--color-white);
+}
+main .section:not(:last-child) {
+  margin-bottom: 4rem;
 }
 main .section.homeAbout {
   background: var(--color-grey);
@@ -74,74 +82,6 @@ main .section.homeAbout .container > div .images div:last-child {
 @media only screen and (max-width: 500px) {
   .home .section.mission p {
     width: 95%;
-  }
-  .pr {
-    padding-right: 0rem;
-  }
-}
-
-/* news */
-.newsContainer .newsBlock {
-  margin-bottom: 6rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6rem 8rem;
-}
-.news {
-  padding: 4rem;
-  background: var(--color-grey);
-  color: var(--color-white);
-  border-radius: 0.5rem;
-  text-align: center;
-}
-.news h4 {
-  font-size: 3rem;
-  margin-bottom: 4rem;
-}
-.news p {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  margin-bottom: 3rem;
-}
-.newsContainer .news a {
-  margin: 0 auto;
-  border-radius: 0.5rem;
-  padding: 1rem 4rem;
-  font-size: 1.6rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  background: var(--color-white);
-  color: var(--color-grey);
-}
-.newsContainer button {
-  border: none;
-  display: block;
-  margin: 0 auto;
-  background: none;
-  cursor: pointer;
-  font-size: 6rem;
-  transition: 0.3s;
-  color: var(--color-grey);
-}
-.newsContainer button:hover {
-  transform: translateY(-3px);
-}
-@media only screen and (max-width: 600px) {
-  .newsContainer .newsBlock {
-    grid-template-columns: 1fr;
-    grid-row-gap: 6rem;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .news {
-    max-width: 35rem;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 330px) {
-  .news {
-    padding: 2rem;
-    max-width: 30rem;
   }
 }
 
@@ -219,5 +159,13 @@ main .section.homeAbout .container > div .images div:last-child {
   .aboutus .quote blockquote {
     font-size: 4rem;
     padding: 4rem;
+  }
+  main .section {
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  main .section {
+    padding: 4rem 1.5rem;
   }
 }

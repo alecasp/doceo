@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../Main/Main.css";
 import img from "../../../assets/images/face.jpg";
+import NewsContainer from "./NewsContainer/NewsContainer";
 
 function Home() {
   return (
@@ -24,7 +25,7 @@ function Home() {
       </article>
 
       <article className="section homeAbout">
-        <div className="container pr">
+        <div className="container">
           <h2>About Us</h2>
           <div>
             <div>
@@ -54,36 +55,7 @@ function Home() {
           </div>
         </div>
       </article>
-
-      <section className="container section newsContainer">
-        <div className="newsBlock">
-          <div className="news">
-            <h4>Rubrik</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloremque a dolorem quidem reprehenderit.
-            </p>
-            <Link to="" className="shadow">
-              Secondary
-            </Link>
-          </div>
-
-          <div className="news">
-            <h4>Rubrik</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloremque a dolorem quidem reprehenderit.
-            </p>
-            <Link to="" className="shadow">
-              Secondary
-            </Link>
-          </div>
-        </div>
-
-        <button>
-          <i className="fas fa-angle-down"></i>
-        </button>
-      </section>
+      <NewsContainer />
     </main>
   );
 }

@@ -12,7 +12,7 @@ function Header() {
           Lorem ipsum dolor sit amet conse adipisicing elit. Sit iste ipsum
           perspiciatis pariatur, minus
         </p>
-        <Link to="#" className="btn">
+        <Link to="/left" className="btn">
           Button
         </Link>
       </section>
