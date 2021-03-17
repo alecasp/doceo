@@ -1,40 +1,41 @@
 import React from "react";
-import css from "./Footer.module.css";
-import logo from "../../assets/images/face.jpg";
+import { Link } from "react-router-dom";
+import "./Footer.css";
+
 function Footer() {
   return (
-    <footer className={css.footer}>
-      <div className={css.footerContainer}>
-        <div className={css.contact}>
+    <footer className="footer">
+      <div className="container">
+        <div className="contact">
           <h3>Contact us</h3>
           <p>
-            <i class="fa fa-phone" aria-hidden="true"></i>
+            <i className="fa fa-phone" aria-hidden="true"></i>
             <span>+46 123 456 78 90</span>
           </p>
           <p>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i className="fa fa-envelope" aria-hidden="true"></i>
             <span>info@mail.se</span>
           </p>
           <p>
-            <i class="fas fa-map-marker-alt"></i>
+            <i className="fas fa-map-marker-alt"></i>
             <span>Street 1, 222 33 City</span>
           </p>
         </div>
-        <div className={css.follow}>
+        <div className="follow">
           <h3>Follow us</h3>
-          <div className={css.icons}>
-            <a href="#" className="shadow">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#" className="shadow">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" className="shadow">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="#" className="shadow">
-              <i class="fab fa-youtube"></i>
-            </a>
+          <div className="icons">
+            <Link to="" className="shadow">
+              <i className="fab fa-facebook-square"></i>
+            </Link>
+            <Link to="" className="shadow">
+              <i className="fab fa-linkedin"></i>
+            </Link>
+            <Link to="" className="shadow">
+              <i className="fab fa-twitter-square"></i>
+            </Link>
+            <Link to="" className="shadow">
+              <i className="fab fa-youtube"></i>
+            </Link>
           </div>
         </div>
       </div>

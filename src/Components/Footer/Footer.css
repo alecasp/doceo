@@ -1,0 +1,74 @@
+/* footer  */
+.footer {
+  padding: 10rem 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer h3 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+}
+.footer p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footer p i {
+  text-align: center;
+  margin-right: 2rem;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .footer {
+    padding: 6rem 0;
+  }
+  .footer h3 {
+    font-size: 3.8rem;
+  }
+  .footer p {
+    font-size: 1.8rem;
+  }
+  .footer a {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .footer h3 {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+  .footer p {
+    font-size: 1.6rem;
+  }
+  .footer a {
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .footer h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer p {
+    font-size: 1.4rem;
+  }
+  .footer a {
+    font-size: 2.2rem;
+    margin-right: 2rem;
+  }
+  .footer p i {
+    margin-right: 1rem;
+  }
+}

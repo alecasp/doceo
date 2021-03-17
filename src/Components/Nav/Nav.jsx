@@ -1,41 +1,32 @@
 import React from "react";
-import css from "./Nav.module.css";
+import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav() {
-  const links = [
-    {
-      name: "Home",
-      link: "#home",
-    },
-    {
-      name: "About Us",
-      link: "#aboutus",
-    },
-    {
-      name: "Contact Us",
-      link: "#contactus",
-    },
-  ];
-
-  const menuHandler = (e) => {
-    document.querySelector("." + css.menuBtn).classList.toggle(css.active);
-    document.querySelector("." + css.navList).classList.toggle(css.active);
+  const menuHandler = () => {
+    document.querySelector(".menuBtn").classList.toggle("active");
+    document.querySelector(".navList").classList.toggle("active");
   };
-
   return (
-    <nav className={css.nav}>
-      <div className={css.logo}>LOGO-IMAGE</div>
-      <div className={css.menu}>
-        <button className={css.menuBtn} onClick={menuHandler}>
-          <i className="fa fa-bars"></i>
-        </button>
-        <ul className={css.navList}>
-          {links.map((link) => (
-            <li key={link.name}>
-              <a href={link.link}>{link.name}</a>
+    <nav className="nav">
+      <div className="container">
+        <div className="logo">LOGO-IMAGE</div>
+        <div className="menu">
+          <button className="menuBtn" onClick={menuHandler}>
+            <i className="fa fa-bars"></i>
+          </button>
+          <ul className="navList">
+            <li>
+              <Link to="/">Home</Link>
             </li>
-          ))}
-        </ul>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

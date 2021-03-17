@@ -1,0 +1,73 @@
+.nav {
+  background: var(--color-primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.nav div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .menu {
+  position: relative;
+}
+
+.nav .menu .menuBtn {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 4rem;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 430px) {
+  .nav .menu .menuBtn {
+    font-size: 3rem;
+  }
+}
+
+.nav .menu .menuBtn:hover,
+.nav .menu .menuBtn.active,
+.nav .menu .menuBtn:active {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+.nav .menu .navList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200%;
+  padding: 1rem 0;
+  background: var(--color-white);
+  transition: 0.3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%) scale(0.5);
+  z-index: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu .navList.active {
+  transform: scale(1) translateX(-50%);
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu .navList li {
+  width: 100%;
+}
+.menu .navList a {
+  display: block;
+  font-size: 2rem;
+  color: var(--color-primary);
+  padding: 1rem;
+  width: 100%;
+}
+.menu .navList a:hover,
+.menu .navList a:active {
+  color: #fff;
+  background: var(--color-primary);
+}

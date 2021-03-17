@@ -3,6 +3,7 @@
   --color-grey: #578385;
   --color-green: #559964;
   --color-purple: #703859;
+  --color-pink: #8a677b;
   --color-white: #fff;
   --color-black: #000;
 }
@@ -28,9 +29,15 @@ a {
 ul {
   list-style: none;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 10px;
 }
+
 @media only screen and (max-width: 1280px) {
   html {
     font-size: 9px;
@@ -43,6 +50,8 @@ html {
   }
 }
 
+/* Reuseable Componenets */
+
 .shadow {
   transition: 0.3s;
 }
@@ -50,4 +59,31 @@ html {
 .shadow:active {
   transform: translateY(-3px);
   box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.containerFlex,
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pr {
+  padding-right: 2rem;
+}
+
+@media only screen and (max-width: 1030px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 85%;
+  }
 }
