@@ -1,8 +1,43 @@
 import React from "react";
 import img from "../../../assets/images/handshake.png";
+import workerImg1 from "../../../assets/images/Bat-Man.jpg";
+import workerImg2 from "../../../assets/images/brooke-cagle.jpg";
+import workerImg3 from "../../../assets/images/bruce-mars.jpg";
+import workerImg4 from "../../../assets/images/christin-hume.jpg";
 import "../../Main/Main.css";
 
 function AboutUs() {
+  const workers = [
+    {
+      img: workerImg1,
+      name: "Worker 1",
+      email: "worker1@mail.com",
+      status: "Digital Strat",
+      phone: "0123-456-789",
+    },
+    {
+      img: workerImg2,
+      name: "Worker 2",
+      email: "worker2@mail.com",
+      status: "Coder",
+      phone: "0123-456-789",
+    },
+    {
+      img: workerImg3,
+      name: "Worker 3",
+      email: "worker3@mail.com",
+      status: "Programmer",
+      phone: "0123-456-789",
+    },
+    {
+      img: workerImg4,
+      name: "Worker 4",
+      email: "worker4@mail.com",
+      status: "Developer",
+      phone: "0123-456-789",
+    },
+  ];
+
   return (
     <main className="aboutus">
       <article className="container section">
@@ -79,6 +114,20 @@ function AboutUs() {
               habitasse nisl convallis molestie auctor.
             </p>
           </div>
+        </div>
+
+        <div className="workers">
+          {workers.map((worker) => (
+            <div className="worker" key={worker.email}>
+              <div className="imgbox">
+                <img src={worker.img} alt="worker-figure" />
+              </div>
+              <h3>{worker.name}</h3>
+              <span>{worker.status}</span>
+              <span>{worker.email}</span>
+              <span>{worker.phone}</span>
+            </div>
+          ))}
         </div>
       </article>
     </main>

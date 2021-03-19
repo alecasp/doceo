@@ -104,7 +104,7 @@ main .section.homeAbout .container > div .images div:last-child {
 }
 
 .aboutus .reasons {
-  margin-top: 10rem;
+  margin: 10rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -119,6 +119,23 @@ main .section.homeAbout .container > div .images div:last-child {
   font-size: 1.6rem;
 }
 
+.aboutus .workers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+.aboutus .workers .worker img {
+  margin-bottom: 2rem;
+}
+.aboutus .workers .worker h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.aboutus .workers .worker span {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
 @media only screen and (max-width: 1150px) {
   .aboutus .quote blockquote {
     font-size: 4.5rem;
@@ -143,6 +160,9 @@ main .section.homeAbout .container > div .images div:last-child {
     font-size: 4rem;
     padding: 5rem 15%;
   }
+  .aboutus .workers {
+    grid-template-columns: 1fr;
+  }
 }
 @media only screen and (max-width: 500px) {
   .aboutus .reasons {
@@ -153,6 +173,12 @@ main .section.homeAbout .container > div .images div:last-child {
   }
   .aboutus .reasons .reason:not(:last-child) {
     margin-bottom: 4rem;
+  }
+  .aboutus .workers .worker h3 {
+    font-size: 2.5rem;
+  }
+  .aboutus .workers .worker span {
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 430px) {
