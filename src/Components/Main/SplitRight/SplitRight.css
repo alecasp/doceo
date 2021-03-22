@@ -1,0 +1,113 @@
+.steps {
+  margin: 10rem auto;
+  width: 60%;
+}
+.step {
+  padding-left: 10rem;
+  position: relative;
+}
+.step span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: var(--color-step);
+}
+.step h4 {
+  font-size: 3rem;
+}
+.step p {
+  font-size: 2rem;
+}
+.step:not(:last-child) {
+  margin-bottom: 6rem;
+}
+.step:not(:last-child) span:after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1rem;
+  height: 200%;
+  background: var(--color-step);
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.form input {
+  padding: 2rem;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: var(--color-input);
+}
+.form input::placeholder {
+  color: var(--color-input-placeholder);
+  font-size: 1.8rem;
+}
+.form div {
+  grid-column: 1 / -1;
+  text-align: right;
+}
+.form div button {
+  background: var(--color-step);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 1030px) {
+  .steps {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .steps {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .step:not(:last-child) span:after {
+    height: 250%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .step:not(:last-child) span:after {
+    height: 300%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .step {
+    padding-left: 7rem;
+  }
+  .step span {
+    font-size: 2.5rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .step h4 {
+    font-size: 2.5rem;
+  }
+  .step p {
+    font-size: 1.6rem;
+  }
+  .step:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .step:not(:last-child) span:after {
+    height: 310%;
+  }
+}
