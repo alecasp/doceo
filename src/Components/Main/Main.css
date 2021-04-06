@@ -1,13 +1,9 @@
 main {
   background: var(--color-grey-light);
-  padding: 4rem 0;
 }
 main .section {
   padding: 5rem;
   background: var(--color-white);
-}
-main .section:not(:last-child) {
-  margin-bottom: 4rem;
 }
 main .section.homeAbout {
   background: var(--color-grey);
@@ -23,8 +19,16 @@ main .section p {
   font-size: 1.8rem;
   line-height: 2.2rem;
 }
+.home .section.mission {
+  padding: 7rem 0;
+}
+.home .section.mission h2 {
+  text-align: center;
+}
 .home .section.mission p {
-  width: 60%;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 main .section a {
   background: transparent;
@@ -81,7 +85,7 @@ main .section.homeAbout .container > div .images div:last-child {
 }
 @media only screen and (max-width: 500px) {
   .home .section.mission p {
-    width: 95%;
+    width: 80%;
   }
 }
 

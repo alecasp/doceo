@@ -2,13 +2,12 @@ header {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.headerSection {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.headerSection {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +17,18 @@ header {
 }
 
 .headerSection.left {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(85, 153, 100, 0.5),
+    rgba(85, 153, 100, 0.5)
+  );
 }
 .headerSection.right {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(112, 56, 89, 0.5),
+    rgba(112, 56, 89, 0.5)
+  );
 }
 
 .headerSection h4 {

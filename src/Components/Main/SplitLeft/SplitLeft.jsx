@@ -4,7 +4,7 @@ import "./SplitLeft.css";
 function SplitLeft() {
   return (
     <main>
-      <article className="container section">
+      <article className="container section left">
         <h2>LEFT</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam
@@ -23,7 +23,7 @@ function SplitLeft() {
           beatae. Voluptas vitae rem, molestias, quaerat modi hic deserunt
           aliquam quis similique alias totam.
         </p>
-        <div className="steps">
+        <div className="steps ">
           <div className="step">
             <span>1</span>
             <h4>Step 1</h4>

@@ -7,7 +7,7 @@ import NewsContainer from "./NewsContainer/NewsContainer";
 function Home() {
   return (
     <main className="home">
-      <article className="container section mission">
+      <article className="section mission">
         <h2>Our Mission</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam

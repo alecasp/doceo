@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import News from "./News";
+import NewsImg1 from "../../../../assets/images/Bat-Man.jpg";
+import NewsImg2 from "../../../../assets/images/brooke-cagle.jpg";
 import "./NewsContainer.css";
 
 function NewsContainer() {
-  const [newsData, setNewsData] = useState(() => [
+  const [newsData] = useState(() => [
     {
-      name: "Rubrik",
+      img: NewsImg1,
+      name: "Curriculam & Pedagogy",
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque a dolorem quidem reprehenderit.",
+        "We believe that education should take into account everything students experience during each moment of their time at school.",
       link: "#",
-      linkName: "Secondary",
     },
     {
-      name: "Rubrik-1",
+      img: NewsImg2,
+      name: "Core Academic & Knowledge",
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque a dolorem quidem reprehenderit.",
+        "We believe that education should take into account everything students experience during each moment of their time at school.",
       link: "#",
-      linkName: "Secondary",
     },
   ]);
   return (
-    <section className="container section newsContainer">
+    <section className="section newsContainer">
       <div className="newsBlock">
         {newsData.map((data, i) => (
           <News data={data} key={i} />

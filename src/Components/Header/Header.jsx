@@ -1,20 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import splitLeftImg from "../../assets/images/split-left.jpg";
 import splitRightImg from "../../assets/images/split-right.jpg";
 import "./Header.css";
 
 function Header() {
   return (
-    <header className="header">
-      <section
-        className="headerSection left"
-        style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(85, 153, 100, 0.5),
-        rgba(85, 153, 100, 0.5)),
-        url(${splitLeftImg})`,
-        }}
-      >
+    <header
+      className="header"
+      style={{ backgroundImage: `url(${splitRightImg})` }}
+    >
+      <section className="headerSection left">
         <h4>Ni söker</h4>
         <h1>Vänster</h1>
         <p>
@@ -25,15 +20,7 @@ function Header() {
           Button
         </Link>
       </section>
-      <section
-        className="headerSection right"
-        style={{
-          backgroundImage: `linear-gradient(to bottom,
-            rgba(112, 56, 89, 0.5),
-            rgba(112, 56, 89, 0.5)),
-        url(${splitRightImg})`,
-        }}
-      >
+      <section className="headerSection right">
         <h4>Ni söker</h4>
         <h1>Höger</h1>
         <p>

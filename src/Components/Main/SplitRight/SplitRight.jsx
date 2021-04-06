@@ -23,7 +23,7 @@ function SplitRight() {
           beatae. Voluptas vitae rem, molestias, quaerat modi hic deserunt
           aliquam quis similique alias totam.
         </p>
-        <div className="steps">
+        <div className="steps right">
           <div className="step">
             <span>1</span>
             <h4>Step 1</h4>
