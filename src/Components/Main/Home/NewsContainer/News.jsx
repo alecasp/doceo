@@ -5,10 +5,10 @@ function News({ data }) {
   return (
     <div className="news">
       <div className="imgbox">
-        <img src={data.img} alt="news" />
+        <img src={data.imageUrl} alt="news" />
       </div>
-      <h4>{data.name}</h4>
-      <p>{data.desc}</p>
+      <h4>{data.heading}</h4>
+      <p>{data.description}</p>
       <Link to={data.link} className="shadow">
         Read More
       </Link>

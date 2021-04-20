@@ -3,7 +3,6 @@
   margin-bottom: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
   grid-gap: 6rem 8rem;
 }
 .news {

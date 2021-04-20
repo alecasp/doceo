@@ -1,39 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import News from "./News";
-import NewsImg1 from "../../../../assets/images/Bat-Man.jpg";
-import NewsImg2 from "../../../../assets/images/brooke-cagle.jpg";
+import Loading from "../../../Loading/Loading";
 import "./NewsContainer.css";
+import { collection } from "../../../../firebase";
 
 function NewsContainer() {
-  const [newsData] = useState(() => [
-    {
-      img: NewsImg1,
-      name: "Curriculam & Pedagogy",
-      desc:
-        "We believe that education should take into account everything students experience during each moment of their time at school.",
-      link: "#",
-    },
-    {
-      img: NewsImg2,
-      name: "Core Academic & Knowledge",
-      desc:
-        "We believe that education should take into account everything students experience during each moment of their time at school.",
-      link: "#",
-    },
-  ]);
-  return (
-    <section className="section newsContainer">
-      <div className="newsBlock">
-        {newsData.map((data, i) => (
-          <News data={data} key={i} />
-        ))}
-      </div>
+  const [loading, setLoading] = useState(() => true);
+  const newsArray = useRef([]);
 
-      <button>
-        <i className="fas fa-angle-down"></i>
-      </button>
-    </section>
-  );
+  useEffect(() => {
+    collection
+      .orderBy("time", "desc")
+      .limit(4)
+      .get()
+      .then((snapshot) => {
+        newsArray.current = snapshot.docs.map((doc, i) => {
+          return <News data={doc.data()} key={i} />;
+        });
+        setLoading(false);
+      });
+  });
+
+  if (!loading) {
+    console.log(newsArray.current);
+    return (
+      <section className="section newsContainer">
+        {newsArray.current.length ? (
+          <div className="newsBlock">{newsArray.current}</div>
+        ) : (
+          <h2 style={{ textAlign: "center" }}>No News</h2>
+        )}
+
+        <button>
+          <i className="fas fa-angle-down"></i>
+        </button>
+      </section>
+    );
+  }
+  return <Loading />;
 }
 
 export default NewsContainer;
